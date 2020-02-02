@@ -1,0 +1,494 @@
+/* 通用 */
+hr {
+    width: 70%;
+    border: 1px solid #0b025a;
+}
+
+p{
+  margin:0px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+margin:0;
+  font-family: inherit;
+  font-weight: 400;
+  color: inherit; 
+}
+
+.text-san-yellow{
+  color:#ffff33;
+}
+
+.text-san-blue{
+  color:#0b025a;
+}
+
+.bg-san-yellow{
+  background:#ffff33;
+}
+
+.bg-san-blue{
+  background:#0b025a;
+}
+
+
+.nav_link_li{
+  width:100%;
+  height:100%;
+  position:relative;
+  z-index:1;
+}
+
+.nav_link_li::before{
+  content:"";
+  position:absolute;
+  top:25%;
+  width:10%;
+  height:50%;
+  border-radius:10%;
+  z-index:-1;
+}
+
+.nav_link_li:hover{
+  color:#0b025a;
+}
+
+.nav_link_li:hover::before{
+  background:#ffff33;
+  animation:scale_ri 0.2s linear forwards;
+}
+
+.link_ti_no_hover{
+  /* color:#fff */
+  background:#0b025a;
+  border-radius:8px;
+  color:#fff;
+}
+
+.link_ti{
+  /* color:#fff */
+  background:#0b025a;
+  border-radius:8px;
+  color:#fff;
+}
+
+.link_ti:hover{
+  color:#ffff33;
+}
+
+.foo_bar{
+  color:#fff;
+}
+
+.foo_bar:hover{
+  color:#ffff33;
+}
+
+.img_position{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:60;
+  transform:translate(-50%,-50%);
+}
+
+/* .img_positioning{
+  position: relative;
+} */
+
+
+.shadow_cor{
+  position:relative;
+  width:100%;
+  height:100%;
+  z-index: 999;
+}
+
+.shadow_cor::before{
+  content:"";
+  position:absolute;
+
+  right:8px;
+  width:96%;
+  height:100%;
+
+  z-index:99;
+}
+
+.shadow_cor:hover::before{
+  filter:blur(5px);
+  background:#cccccc80;
+}
+
+
+.model_img:hover{
+filter:blur(2px) grayscale(50%);
+}
+
+.blur_1:hover{
+  filter:blur(2px);
+}
+
+
+
+.btn.btn-san-blue {
+  color: #fff;
+  background-color: rgb(63, 93, 136);
+  border-color: rgb(63, 93, 136);
+  box-shadow: 0 2px 2px 0 rgba(63, 93, 136, 0.14), 0 3px 1px -2px rgba(63, 93, 136, 0.2), 0 1px 5px 0 rgba(63, 93, 136, 0.12);
+}
+ 
+
+#nav_logo_img:hover{
+  animation:compression 0.6s linear forwards;
+}
+
+#Capa_1 {
+    width: 20px;
+    height: 20px;
+}
+
+#Capa_2:hover{
+  animation:beat 0.6s linear forwards;
+}
+
+#footer_logo_img:hover{
+  animation:beat 0.6s linear forwards;
+}
+
+#ig_icon{
+    width: 40px;
+    height: 40px; 
+}
+
+#ig_icon:hover{
+  animation:beat 0.6s linear forwards;
+}
+
+#fb_icon{
+    width: 40px;
+    height: 40px;
+}
+
+#fb_icon:hover{
+  animation:beat 0.6s linear forwards;
+}
+
+#foo_2a a:hover{
+  color:rgb(63, 93, 136);
+}
+
+
+.wrap{
+  word-wrap:break-word;
+}
+
+.circle{
+  border-radius:50%;
+}
+
+.h-150{
+  height:150%;
+}
+
+/* 上下伸縮 */
+@keyframes compression{
+  0%{
+    transform:scale(1);
+  }
+  30%{
+    transform:scale(1,2);
+  }
+  70%{
+    transform:scale(1,0.6);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+/* 向右延伸1 */
+@keyframes scale_ri{
+  from{
+    transform:scale(1);
+    transform-origin:center left;
+  }
+  to{
+    transform:scaleX(10);
+    transform-origin:center left;
+  }
+}
+
+/* 向右延伸2 */
+@keyframes scale_ti_ri{
+  from{
+    transform:scale(1);
+    transform-origin:center left;
+  }
+  to{
+    transform:scaleX(9.5);
+    transform-origin:center left;
+  }
+}
+
+/* 抖動 */
+@keyframes beat{
+  0%{
+    transform:translateY(0%);
+  }
+  50%{
+    transform:translateY(-8%);
+  }
+  100%{
+    transform:translateY(0%);
+  }
+}
+
+
+
+/* 斷點區 --------------------------------------------------------------------- */
+
+
+/* xs */
+@media (max-width: 575px) {
+
+  footer{
+    height:50%;
+  }
+
+  #footer_d{
+    /* height:50%; */
+    flex-direction:column;
+    align-items:start;
+
+  }
+  
+
+  #carouselExampleIndicators{
+    width:100%;
+  }
+
+  #con100{
+    width:100% !important;
+  }
+
+
+  #model{
+    flex-direction:column;
+  }
+  /* #section_contact_form{
+    height:50%;
+    align-items:start;
+  } */
+  #sign_sec_form_d3{
+    width:100%;
+  }
+
+  #signup_sec{
+    height:90% !important;
+  }
+
+
+  #footer_logo{
+    height:50%;
+    order:1;
+    align-self:center;
+  }
+
+  #footer_logo_img{
+    height:100%;
+  }
+
+  #footer_contact_info{
+    order:3;
+    /* margin:3rem 0rem; */
+  }
+
+  #footer_community{
+    order:2;
+    flex-direction:row;
+    /* margin:3rem 0rem; */
+  }
+  #footer_contact_info_d1{
+    align-items:center;
+  }
+
+  .media{
+    flex-direction:column;
+  }
+  }
+  
+  /* sm */
+  @media (min-width: 576px) {
+
+    footer{
+      height:50%;
+    }
+
+    #footer_d{
+      /* height:50%; */
+      flex-direction:column;
+      align-items:start;
+    }
+    
+
+    #carouselExampleIndicators{
+      width:100%;
+    }
+
+    #model_section1{
+      flex-direction:column;
+    }
+
+#contact_sec{
+      height:50%;
+    }
+
+    /* #section_contact_form{
+      height:50%;
+      align-items:start;
+    } */
+
+    #sign_sec_form_d3{
+      width:100%;
+    }
+
+
+
+    #footer_logo{
+      height:50%;
+      order:1;
+      align-self:center;
+    }
+
+    #footer_logo_img{
+      height:100%;
+    }
+
+    #footer_contact_info{
+      order:3;
+      /* margin:3rem 0rem; */
+    }
+
+    #footer_community{
+      order:2;
+      flex-direction:row;
+      /* margin:3rem 0rem; */
+    }
+    #footer_contact_info_d1{
+      align-items:center;
+    }
+
+    .media{
+      flex-direction:column;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+
+    footer{
+      margin-top:50px;
+      height:25%;
+    }
+
+    #footer_d{
+      flex-direction:row;
+    }
+
+    #carouselExampleIndicators{
+      width:50%;
+    }
+
+    #model_section1{
+      flex-direction:row;
+      /* height:75%; */
+    }
+
+    #contact_sec{
+      height:75%;
+    }
+
+    /* #section_contact_form{
+      height:50%;
+      align-items:center;
+    } */
+
+    #sign_sec_form_d3{
+      width:50%;
+    }
+
+    #footer_logo{
+      height:50%;
+      order:1;
+      align-self:start;
+    }
+
+    #footer_logo_img{
+      height:100%;
+    }
+
+    #footer_contact_info{
+      order:2;
+    }
+
+    #footer_community{
+      order:3;
+      flex-direction:column;
+      /* margin:3rem 0rem; */
+    }
+
+    #footer_contact_info_d1{
+      align-items:center;
+    }
+
+    .media{
+      flex-direction:row;
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 992px) {
+    html,
+    body {
+      height: 100%;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1200px) {
+
+  }
+
+
+
+
+/* index */
+
+
+/* about */
+
+
+/* model */
+
+
+/* news */
+
+/* sign in */
+
+/* sign up */
+
+/* contact */
+
