@@ -12,59 +12,55 @@ $back_css='
 ';
 
 $header='
-<nav class="navbar fixed-top navbar-expand-lg bg-light" id="navbar">
-    <div class="container">
-        <div class="navbar-translate">
-            <a class="navbar-brand" href="index.php">
-                <div class="w-100">
-                    <img src="images/home_logo_top/LOGO_延伸圖案_DM.png" id="nav_logo_img" style="width:84px">
-                  </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.php">
+        <div class="w-100">
+            <img src="images/home_logo_top/LOGO_延伸圖案_DM.png" id="nav_logo_img" style="width:84px">
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav">
-                <li id="" class="nav-item nav_link_li">
-                    <a  href="index.php" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item nav_link_li">
-                    <a href="about.php" class="nav-link">About</a>
-                </li>
-                <li class="nav-item nav_link_li">
-                    <a href="news.php" class="nav-link">News</a>
-                </li>
-                <li class="nav-item nav_link_li">
-                    <a href="model.php" class="nav-link">Model</a>
-                </li>
-                <li class="nav-item nav_link_li">
-                    <a href="contact.php" class="nav-link">Contact</a>
-                </li>
-            </ul>
-
-            <a href="signin.php" class="nav-link ml-auto">
-                <i class="material-icons">
-                    <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.532px"
-                        height="45.532px" viewBox="0 0 45.532 45.532"
-                        style="enable-background:new 0 0 45.532 45.532;" xml:space="preserve">
-                        <g>
-                            <path d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765
-                   S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53
-                   c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012
-                   c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592
-                   c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z" />
-                        </g>
-                    </svg>
-                </i>
-            </a>
-        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li id="" class="nav-item nav_link_li">
+                <a  href="index.php" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item nav_link_li">
+                <a href="about.php" class="nav-link">About</a>
+            </li>
+            <li class="nav-item nav_link_li">
+                <a href="news.php" class="nav-link">News</a>
+            </li>
+            <li class="nav-item nav_link_li">
+                <a href="model.php" class="nav-link">Model</a>
+            </li>
+            <li class="nav-item nav_link_li">
+                <a href="contact.php" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    <a href="signin.php" class="nav-link ml-auto">
+        <i class="material-icons">
+            <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.532px"
+                height="45.532px" viewBox="0 0 45.532 45.532"
+                style="enable-background:new 0 0 45.532 45.532;" xml:space="preserve">
+                <g>
+                    <path d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765
+            S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53
+            c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012
+            c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592
+            c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z" />
+                </g>
+            </svg>
+        </i>
+    </a>
     </div>
+  </div>
 </nav>
 ';
 
